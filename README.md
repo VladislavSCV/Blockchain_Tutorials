@@ -44,12 +44,9 @@ type Blockchain struct {
 ```
 
 #ТУТОРИАЛЫ
--Китайский язык
-1) https://github.com/liuchengxu/blockchain-tutorial/blob/master/content/part-1/basic-prototype.md
--Вьетнамский язык 
+1) https://habr.com/ru/articles/348672/
 2) https://github.com/hlongvu/blockchain-go-vietnamese/tree/master
--Русский язык 
-3) https://habr.com/ru/articles/348672/
+3)https://github.com/liuchengxu/blockchain-tutorial/blob/master/content/part-1/basic-prototype.md 
 
 #РОАДМАП
 1) https://roadmap.sh/blockchain
