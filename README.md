@@ -17,7 +17,7 @@ https://www.ipfa.org/wp-content/uploads/2022/09/Blockchain-Digitalisation-Image-
 Предлагаю разобрать, что находится в этом блоке?!?!?!?
 Окей, я сразу начну показывать примеры кода на go, чтобы реально было понять 'эти ваши блоки'
 
-<code>
+```
 type Block struct {
 	PrevBlockHash []byte
 	Data          []byte
@@ -25,5 +25,5 @@ type Block struct {
 	Timestamp     int64
 	Nonce         int
 }
-</code>
+```
 
