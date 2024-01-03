@@ -17,13 +17,58 @@ https://www.ipfa.org/wp-content/uploads/2022/09/Blockchain-Digitalisation-Image-
 Предлагаю разобрать, что находится в этом блоке?!?!?!?
 Окей, я сразу начну показывать примеры кода на go, чтобы реально было понять 'эти ваши блоки'
 
-```
-type Block struct {
+```type Block struct {
 	PrevBlockHash []byte
 	Data          []byte
 	Hash          []byte
 	Timestamp     int64
 	Nonce         int
-}
-```
+}```
+
+Супер, тут мы создаем сам блок, а точнее его структуру. 
+Соответственно, можно понять, что блок имеет важные состовляющие: 
+- Хеш предыдущего блока
+- Данные которые будут храниться в блоке
+- Хэш блока
+- Время создания блока
+- это счетчик. (на самом деле сам забыл как называется это, если найдешь благоразумное название, то... сбрось пж)
+
+Окей, структура готова. Теперь самое важное ХЭШ. Реализуем функцию по созданию хэша.
+
+```func (b *Block) SetHash() {
+	timestamp := []byte(strconv.FormatInt(b.Timestamp, 10))
+	headers := bytes.Join([][]byte{b.PrevBlockHash, b.Data, timestamp}, []byte{})
+	hash := sha256.Sum256(headers)
+
+	b.Hash = hash[:]
+}```
+
+Погнали разбирать)
+```func (b *Block) SetHash() {```
+Создаем функцию которая привязанна к нашему блоку она соответственно называется setHash
+
+```timestamp := []byte(strconv.FormatInt(b.Timestamp, 10))```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
