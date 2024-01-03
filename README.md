@@ -17,13 +17,15 @@ https://www.ipfa.org/wp-content/uploads/2022/09/Blockchain-Digitalisation-Image-
 Предлагаю разобрать, что находится в этом блоке?!?!?!?
 Окей, я сразу начну показывать примеры кода на go, чтобы реально было понять 'эти ваши блоки'
 
-```type Block struct {
+```
+type Block struct {
 	PrevBlockHash []byte
 	Data          []byte
 	Hash          []byte
 	Timestamp     int64
 	Nonce         int
-}```
+}
+```
 
 Супер, тут мы создаем сам блок, а точнее его структуру. 
 Соответственно, можно понять, что блок имеет важные состовляющие: 
@@ -41,7 +43,8 @@ https://www.ipfa.org/wp-content/uploads/2022/09/Blockchain-Digitalisation-Image-
 	hash := sha256.Sum256(headers)
 
 	b.Hash = hash[:]
-}```
+}
+```
 
 Погнали разбирать)
 ```func (b *Block) SetHash() {```
