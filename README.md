@@ -51,7 +51,7 @@ func (b *Block) SetHash() {
 ```
 func (b *Block) SetHash() {
 ```
-Создаем функцию которая привязанна к нашему блоку она соответственно называется setHash
+Создаем функцию которая привязанна к нашему блоку, она соответственно называется setHash
 
 ```
 timestamp := []byte(strconv.FormatInt(b.Timestamp, 10))
