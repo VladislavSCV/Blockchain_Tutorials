@@ -37,7 +37,8 @@ type Block struct {
 
 Окей, структура готова. Теперь самое важное ХЭШ. Реализуем функцию по созданию хэша.
 
-```func (b *Block) SetHash() {
+```
+func (b *Block) SetHash() {
 	timestamp := []byte(strconv.FormatInt(b.Timestamp, 10))
 	headers := bytes.Join([][]byte{b.PrevBlockHash, b.Data, timestamp}, []byte{})
 	hash := sha256.Sum256(headers)
