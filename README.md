@@ -57,4 +57,4 @@ type Blockchain struct {
 3) https://youtu.be/qgofSZFTuVc?si=6g8hOc7smESe0i_G
 
 #Ethereum
-1)https://ethereum.org/ru/developers/docs/programming-languages/golang/
+1) https://ethereum.org/ru/developers/docs/programming-languages/golang/
