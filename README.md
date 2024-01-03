@@ -25,5 +25,5 @@ type Block struct {
 	Timestamp     int64
 	Nonce         int
 }
-<\code>
+</code>
 
