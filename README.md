@@ -35,27 +35,14 @@ type Block struct {
 - Время создания блока
 - это счетчик. (на самом деле сам забыл как называется это, если найдешь благоразумное название, то... сбрось пж)
 
-Окей, структура готова. Теперь самое важное ХЭШ. Реализуем функцию по созданию хэша.
+Ну а blockchain соответсвено просто массив из блоков
 
 ```
-func (b *Block) SetHash() {
-	timestamp := []byte(strconv.FormatInt(b.Timestamp, 10))
-	headers := bytes.Join([][]byte{b.PrevBlockHash, b.Data, timestamp}, []byte{})
-	hash := sha256.Sum256(headers)
-
-	b.Hash = hash[:]
+type Blockchain struct {
+	blocks []*Block
 }
 ```
 
-Погнали разбирать)
-```
-func (b *Block) SetHash() {
-```
-Создаем функцию которая привязанна к нашему блоку, она соответственно называется setHash
-
-```
-timestamp := []byte(strconv.FormatInt(b.Timestamp, 10))
-```
 
 
 
