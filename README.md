@@ -58,3 +58,6 @@ type Blockchain struct {
 
 #Ethereum
 1) https://ethereum.org/ru/developers/docs/programming-languages/golang/
+
+#Новости и статьи
+1) https://www.mlq.ai/tag/blockchain/
